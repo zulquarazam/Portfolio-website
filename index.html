@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/cace0e1abd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    
+                    <!--<li><a href="#service">Service</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                   
+                
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web developer</p>
+                <h1>Hi, I'm <span>Zul Quarnain Azam</span></h1>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I am Zul Quarnain Azam , 21 year old Mern stack developer from Chandigarh.Currently in final year at the University Institute of Engineering and Technology, Panjab University. Having a strong passion for web development, I have gained expertise in various technologies , including HTML,CSS,Javascript , and React.Also have keen interest in the field of data analytics </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C | C++ | Python | JavaScript</li>
+                            <li><span>Web Development</span><br>HTML | CSS | Bootstrap | Node.js | React.js | Express.js</li>
+                            <li><span>Data Analysis</span><br>Power Bi | SQL </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Intern at DIC</span><br>Image annotation and segmentation</li>
+                            <li><span>STAR UIET</span><br>Sub head in official Alumni relations club </li>
+                            <li><span>Data Analysis</span><br>Worked on data analysis using pandas, power bi and sql</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>UIET, PU (2021-25)</span><br>Computer Science and Engineering (CSE)  CGPA:7.43</li>
+                            <li><span>AN COLLEGE, Patna , Bihar</span><br>Intermediate of Science, 80.3%</li>
+                            <li><span>Mothers International Academy</span><br>Class 10th, 95.2%</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--<div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Web Design</h2>
+                    <p>Lore, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, obcaecati! Velit eos soluta earum dolor, temporibus officia exercitationem quos ipsam laudantium itaque totam voluptas magni, unde eius at? Quod, doloribus?</p>
+                    <a href="#">Learn more</a>
+        
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, obcaecati! Velit eos soluta earum dolor, temporibus officia exercitationem quos ipsam laudantium itaque totam voluptas magni, unde eius at? Quod, doloribus?</p>
+                    <a href="#">Learn more</a>
+        
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, obcaecati! Velit eos soluta earum dolor, temporibus officia exercitationem quos ipsam laudantium itaque totam voluptas magni, unde eius at? Quod, doloribus?</p>
+                    <a href="#">Learn more</a>
+        
+                </div>
+                
+        </div>
+    </div>-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                        <p>Made using API integration and using react.js including vite library</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Data analysis </h3>
+                        <p>Extract th best performing cricket players in the world cup using pandas, pyhton, power bi </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Frontend of a commerce website</h3>
+                        <p>Using html, css and javaScript</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-share-from-square"></i>zulquarazam19@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7488430646</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="images/resume2.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Message sent successfully</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvQUq_P3Ipu7-QoXoG8l5wykhF8Q8tPNq7lnhm9_sadXME1B1oZsdlrfb8R5l6p1TX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
